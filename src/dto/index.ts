@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-export class ManipulateDto {
+export class PermutationsDto {
   @ApiProperty({ type: String, example: 'a' })
   input: string;
 }

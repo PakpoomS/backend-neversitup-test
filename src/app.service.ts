@@ -1,5 +1,5 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
-import { FindCountSmileysDto, FindOddNumberDto, ManipulateDto } from './dto';
+import { FindCountSmileysDto, FindOddNumberDto, PermutationsDto } from './dto';
 
 @Injectable()
 export class AppService {
@@ -31,7 +31,7 @@ export class AppService {
     return 'Hello My name is Pakpoom Somroop';
   }
 
-  postManipulate(body: ManipulateDto): string[] {
+  postPermutations(body: PermutationsDto): string[] {
     const wordLength = body.input.length;
     const frequencyMap: Record<string, number> = {};
 
