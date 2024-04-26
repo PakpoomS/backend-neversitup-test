@@ -42,6 +42,7 @@ export class TodosService {
         },
         data: {
           ...updateTodoDto,
+          updated_at: new Date(),
         },
       });
       return result;

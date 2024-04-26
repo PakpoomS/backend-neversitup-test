@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework TypeScript for test to apply work at Neversitup
 
 ## Installation
 
@@ -58,15 +58,17 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
-## Support
+## Created By 
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Pakpoom Somroop 
 
-## Stay in touch
+## Node version 
+- ^ v20.9.0
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## Standard of init project 
+- Nestjs Official Create By CLI 
+- Read from eslintrc.js (Formatter)
+
 
 ## License
 

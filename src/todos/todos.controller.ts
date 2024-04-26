@@ -6,13 +6,17 @@ import {
   Param,
   Delete,
   Put,
+  UseGuards,
 } from '@nestjs/common';
 import { TodosService } from './todos.service';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
-import { ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 
+@ApiBearerAuth()
 @ApiTags('Todos')
+@UseGuards(JwtAuthGuard)
 @Controller('todos')
 export class TodosController {
   constructor(private readonly todosService: TodosService) {}

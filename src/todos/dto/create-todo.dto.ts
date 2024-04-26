@@ -1,8 +1,8 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateTodoDto {
-  @ApiProperty({})
+  @ApiProperty({ required: true })
   title: string;
-  @ApiProperty({})
+  @ApiProperty({ required: true })
   description: string;
 }
